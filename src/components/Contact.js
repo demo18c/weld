@@ -3,7 +3,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-import rustic from '../rustic.jpg';
+import rustic from '../assests/rustic.jpg';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -33,7 +33,7 @@ const Contact = () => {
 	const classes = useStyles();
 
 	return (
-		<Grid>
+		<Grid container justify="center">
 			<Paper className={classes.paper}>
 				<Typography variant="h1" className={classes.head} justifyContent="center">
 					Contact Us

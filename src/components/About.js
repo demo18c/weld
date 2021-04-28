@@ -1,8 +1,9 @@
-import { Container, Grid, Paper, Typography } from '@material-ui/core';
+import { Grid, Paper, Typography } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import rustic from '../rustic.jpg';
+import rustic from '../assests/rustic.jpg';
+import profile from '../assests/profile.jpg';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -15,7 +16,6 @@ const useStyles = makeStyles(theme => ({
 		width: '800px',
 		height: '100vh',
 		backgroundImage: `url(${rustic})`
-		// maxWidth="sm"
 	},
 	head: {
 		color: 'black',
@@ -52,6 +52,7 @@ const About = () => {
 							eget lorem. Sed ipsum leo, vulputate id enim quis, bibendum gravida est. Nam mauris nulla,
 							volutpat facilisis posuere quis, tristique eu turpis.
 						</p>
+						<p>Whether it’s steel or wood, come with an idea and it can be built. </p>
 						{/* <p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla dui sapien, nec
 							venenatis risus fringilla vitae. Morbi luctus porttitor felis quis ullamcorper. Pellentesque
@@ -63,6 +64,10 @@ const About = () => {
 							malesuada nisi efficitur quis. Aliquam et arcu aliquam, fermentum ipsum a, dictum est.
 						</p> */}
 					</Typography>
+					<div>
+						<img className="profile-pic" src={profile} />
+						<p>first name last name</p>
+					</div>
 				</Paper>
 			</Grid>
 		</div>

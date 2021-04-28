@@ -8,7 +8,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 
 import '../App.css';
 
-import image from '../image.png';
+import image from '../assests/image.png';
 
 import { Container, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
@@ -88,7 +88,7 @@ export default function ButtonAppBar() {
 							//	window.location.pathname = val.path;
 							//	}}
 							>
-								<Link to={val.path}>
+								<Link style={{ textDecoration: 'none' }} to={val.path}>
 									{/* <ListItemIcon className={classes.linkText} id="icon">
 										{val.icon}
 									</ListItemIcon> */}
